@@ -1,0 +1,111 @@
+    /* MenuDesplegado.module.css */
+
+    :root {
+        --blue-dark: #1a237e;
+        --blue-light: #64b5f6;
+        --white: #ffffff;
+        --gray-light: #eeeeee;
+        --gray-dark: #424242;
+    }
+    
+    .PrinDiv {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+        background: linear-gradient(to bottom, black, var(--blue-dark), var(--blue-light));
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .Visible {
+        transform: translateX(0);
+    }
+    
+    .NotVisible {
+        transform: translateX(-100%);
+    }
+    
+    .Encabezado {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid var(--gray-light);
+    }
+    
+    .botonNav {
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .botonNav:hover {
+        transform: scale(1.1);
+    }
+    
+    .Nav {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .Nav a {
+        text-decoration: none;
+        
+    }
+    
+    .botonNav {
+        background: var(--blue-light);
+        color: var(--gray-dark);
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    .botonNav:hover {
+        background: var(--blue-dark);
+    }
+    
+    .userProfile {
+        padding: 15px;
+        border-top: 1px solid var(--gray-light);
+        text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+        .PrinDiv {
+        width: 200px;
+        }
+    
+        .botonNav {
+        font-size: 0.9rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .PrinDiv {
+        width: 180px;
+        }
+    
+        .botonNav {
+        font-size: 0.8rem;
+        }
+    }
+    

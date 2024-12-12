@@ -1,0 +1,55 @@
+/* VentanaPrincipal.module.css */
+
+:root {
+    --blue-dark: #1a237e;
+    --blue-light: #64b5f6;
+    --white: #ffffff;
+    --gray-light: #eeeeee;
+}
+
+    .Body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--blue-light));
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    }
+    
+    .Content {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+    }
+    
+    .Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(--blue-dark);
+    color: var(--white);
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    }
+    
+    .MenuOpen {
+        transform: translateX(0);
+    }
+    
+    .MenuToggle {
+        display: none;
+    }
+    
+    @media (max-width: 768px) {
+        .Menu {
+        width: 200px;
+        }
+    
+        .Content {
+        padding: 15px;
+        }
+    }
+    

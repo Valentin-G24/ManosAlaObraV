@@ -1,0 +1,13 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid red; /* Ayuda visual para depuración */
+}
+
+.card {
+    border: 1px solid blue; /* Ayuda visual para verificar que las tarjetas se están renderizando */
+}

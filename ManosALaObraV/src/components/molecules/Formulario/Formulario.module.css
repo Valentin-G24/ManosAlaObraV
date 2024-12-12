@@ -1,0 +1,75 @@
+    /* Formulario.module.css */
+
+    :root {
+        --blue-light: #e0f7fa;
+        --blue-medium: #0288d1;
+        --blue-dark: #01579b;
+        --white: #ffffff;
+        --black: #000000;
+    }
+    
+    .formContainer {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: var(--blue-light);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    
+    .formContainerScrolled {
+        background-color: var(--blue-medium);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .formElements {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .formBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--blue-light);
+        z-index: -1;
+        transition: background-color 0.3s;
+    }
+    
+    .formBackgroundScrolled {
+        background-color: var(--blue-medium);
+    }
+    
+    @media (max-width: 768px) {
+        .form {
+        flex-direction: column;
+        padding: 0.8rem;
+        }
+    
+        .formElements {
+        gap: 0.8rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .form {
+        padding: 0.6rem;
+        }
+    
+        .formElements {
+        gap: 0.6rem;
+        }
+    }

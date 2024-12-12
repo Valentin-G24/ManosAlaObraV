@@ -1,0 +1,62 @@
+    /* Header.module.css */
+
+    :root {
+        --blue-dark: #1a237e;
+        --blue-light: #64b5f6;
+        --white: #ffffff;
+        --gray-light: #eeeeee;
+        --gray-dark: #424242;
+    }
+    
+    .PrinDiv {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 15vh;
+        padding-left: 2rem;
+        background: linear-gradient(to bottom, black, var(--blue-dark), var(--blue-light));
+        color: var(--white);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    
+    .HeaderButton {
+        background: var(--gray-dark) ;
+        border: none;
+        color: var(--white);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .HeaderButton:hover {
+        transform: scale(1.1);
+    }
+    
+    .HeaderH1 {
+        font-size: 3vw;
+        font-weight: bold;
+        margin:auto;
+    }
+    
+    @media (max-width: 768px) {
+    
+        .HeaderH1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .HeaderH1 {
+        flex-direction: column;
+        font-size: 3vh;
+        } 
+    }
+
+    
+    

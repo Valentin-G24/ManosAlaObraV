@@ -1,0 +1,31 @@
+#formContainer{
+    position: absolute;
+    background-color: #353535;
+    padding: 2rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#add {
+    margin: 1rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.input{
+    height: 2vh;
+    outline: none;
+    border: black 1px;
+    border-radius: 4px;
+    padding: 2vh;
+}

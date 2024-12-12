@@ -1,0 +1,135 @@
+/* Login.module.css */
+
+:root {
+    --blue-light: #e0f7fa;
+    --blue-medium: #0288d1;
+    --blue-dark: #01579b;
+    --black: #000000;
+    --white: #ffffff;
+  }
+  
+  #bodyGral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, var(--black), var(--blue-medium), var(--blue-dark));
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #prinDiv {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  #prinDiv h1 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    color: var(--blue-dark);
+  }
+  
+  #prinDiv p {
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+    color: var(--blue-medium);
+  }
+  
+  #formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .Input {
+    padding: 0.8rem;
+    border: 1px solid var(--blue-medium);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--blue-dark);
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .Input:focus {
+    border-color: var(--blue-dark);
+  }
+  
+  #Buton {
+    background-color: var(--blue-medium);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #Buton:hover {
+    background-color: var(--blue-dark);
+  }
+  
+  @media (max-width: 768px) {
+    #prinDiv {
+      padding: 1.5rem;
+    }
+  
+    #prinDiv h1 {
+      font-size: 1.8rem;
+    }
+  
+    #prinDiv p {
+      font-size: 0.9rem;
+    }
+  
+    .Input {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+    }
+  
+    #Buton {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #prinDiv {
+      padding: 1rem;
+    }
+  
+    #prinDiv h1 {
+      font-size: 1.5rem;
+    }
+  
+    #prinDiv p {
+      font-size: 0.8rem;
+    }
+  
+    .Input {
+      padding: 0.6rem;
+      font-size: 0.8rem;
+    }
+  
+    #Buton {
+      padding: 0.6rem;
+      font-size: 0.8rem;
+    }
+  }
+  

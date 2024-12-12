@@ -1,0 +1,53 @@
+    /* Card.module.css */
+
+    :root {
+        --blue-light: #e0f7fa;
+        --blue-medium: #0288d1;
+        --blue-dark: #01579b;
+        --black: #000000;
+        --white: #ffffff;
+    }
+    
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width: 80%; /* La caja ocupará el 80% del ancho del contenedor */
+        max-width: 600px; /* Establece un ancho máximo para pantallas grandes */
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-color: var(--blue-medium);
+        color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: transform 0.3s, background-color 0.3s;
+        cursor: pointer;
+    }
+    
+    .card:hover {
+        background-color: var(--blue-dark);
+        transform: translateY(-5px);
+    }
+    
+    .card:active {
+        transform: translateY(0);
+    }
+    
+    @media (max-width: 768px) {
+        .card {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .card {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+        }
+    }
+    

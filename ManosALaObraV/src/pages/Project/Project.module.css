@@ -1,0 +1,119 @@
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+    gap: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #2a6df4; /* Azul intenso */
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.infoDisplay {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff; /* Fondo blanco para la información */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardContainer {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.addForm {
+    width: 90%;
+    max-width: 600px;
+    background-color: #e9f0ff; /* Azul muy claro */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.addForm input,
+.addForm button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #cbd5e0;
+}
+
+.addForm button {
+    background-color: #2a6df4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addForm button:hover {
+    background-color: #1f4ea8; /* Azul más oscuro al pasar el cursor */
+}
+
+.loadingMessage,
+.noEpicsMessage {
+    color: #2a6df4;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.storiesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4f7fc; /* Fondo claro */
+    min-height: 100vh;
+}
+
+.storiesHeader {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a6df4;
+    margin-bottom: 1rem;
+}
+
+.errorMessage {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.loadingMessage {
+    font-size: 1.2rem;
+    color: #2a6df4;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.noStoriesMessage {
+    font-size: 1.2rem;
+    color: #2a6df4;
+    text-align: center;
+    margin: 1rem 0;
+}
